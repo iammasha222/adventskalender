@@ -1,0 +1,52 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.door {
+  background-color: #4c7f54;
+  color: white;
+  font-size: 1.5em;
+  border-radius: 10px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.door:hover {
+  transform: scale(1.05);
+  background-color: #4c7f54;
+}
+
+.door.open {
+  background-color: #fff;
+  color: #333;
+  font-size: 1em;
+  cursor: default;
+}
+
+.message {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #333;
+  min-height: 30px;
+}
