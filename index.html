@@ -3,11 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Adventskalender 2025</title>
+    <title>Michi's Adventskalender 2025</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Adventskalender</h1>
+    <h1>Michi's Adventskalender 2025</h1>
+
+    <!-- Countdown till december -->
+    <div class="countdown-section">
+      <div class="countdown-container">
+        <div class="countdown-box">
+          <h3 class="countdown-title">Du kannst anfangen in</h3>
+          <div class="countdown-display" id="countdown3">
+            <div class="time-unit">
+              <span class="time-number" id="days3">0</span>
+              <span class="time-label">Tage</span>
+            </div>
+            <div class="time-unit">
+              <span class="time-number" id="hours3">0</span>
+              <span class="time-label">Stunden</span>
+            </div>
+            <div class="time-unit">
+              <span class="time-number" id="minutes3">0</span>
+              <span class="time-label">Minuten</span>
+            </div>
+            <div class="time-unit">
+              <span class="time-number" id="seconds3">0</span>
+              <span class="time-label">Sekunden</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="message" class="message"></div>
 
     <div class="calendar">
       <div class="door" data-day="1">1</div>
@@ -35,9 +64,7 @@
       <div class="door" data-day="23">23</div>
       <div class="door" data-day="24">24</div>
     </div>
-    <div id="message" class="message"></div>
 
     <script src="script.js"></script>
   </body>
 </html>
-
