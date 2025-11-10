@@ -1,29 +1,29 @@
 // Hints/content for each day of the advent calendar
 const hints = {
-    1: "Schau unter dem Kissen!",
-    2: "Im Kühlschrank, neben der Milch.",
-    3: "Vielleicht in deiner Tasche?",
-    4: "Hinter dem Vorhang?",
-    5: "Im Schuhschrank!",
-    6: "Neben deinem Lieblingsbuch.",
-    7: "Unter dem Sofa.",
-    8: "Auf dem Balkon!",
-    9: "Bei den Pflanzen 🌿",
-    10: "Im Badezimmerschrank!",
-    11: "In der Küchenschublade.",
-    12: "Neben dem Computer.",
-    13: "Hinter dem Fernseher.",
-    14: "Im Schrank oben links.",
-    15: "Unter dem Tisch.",
-    16: "Im Rucksack.",
-    17: "Im Kleiderschrank.",
-    10: "Bei den Weihnachtskeksen 🍪",
-    19: "In der Jackentasche.",
-    20: "Bei den Sportsachen.",
-    21: "Im Bücherregal.",
-    22: "Hinter dem Spiegel.",
-    23: "Unter der Decke 😴",
-    24: "Unter dem Weihnachtsbaum 🎄"
+    1: "In dem Schuhkasten(dein Teil)", // Краска для фигурок
+    2: "In dem Kallax", // Протеиновый батончик
+    3: "Im Kühlschrank", // Kinder Hippo (2 шт.)
+    4: "Kannst du mir eine Packung Taschentücher bringen?", // Магниты 40K
+    5: "In dem Trockner", // Носки 
+    6: "In der Mikrowelle", // Knoppers (3)
+    7: "Schwarze Wandregale", // Monster энергетик
+    8: "In deinem Mal-Tisch", // Вафли Manner
+    9: "Frag mal die Monstera, sie weißt es sicher", // Руины для 40K
+    10: "Mein Nachttisch, 2 Schublade", // Knoppers (3)
+    11: "Bei deinen Unfug-Klamotten", // Подставка для покраски 
+    12: "Bei dem Airfryer", // Kinder Hippo (2 шт.)
+    13: "Haben wir genug Nudeln?", // Марципан
+    14: "Dein Nachttisch", // Вазелин для губ
+    15: "Hinter deinem PC", // Reeces
+    16: "Garderobenpaneel, oben", // Джерки или салями
+    17: "Unter dem Bett", // Green Stuff для 40K
+    10: "Schau dir den Esstisch genauer an", // Kinder Hippo (2 шт.)
+    19: "Bei dem Staubsauger", // Вафли Manner
+    20: "Da, wo die Medikamente liegen", // Протеиновый батончик
+    21: "Eingangstür", // // Knoppers (3)
+    22: "Unter dem Couch", // Vitamin Getränk
+    23: "Bei den Handtüchern", // Носки
+    24: "Weihnachtbaum" // Kinder Bueno
 };
 
 function startCountdowns() {
@@ -127,12 +127,12 @@ doors.forEach(door => {
                 // If the door is open -> close it
                 door.classList.remove('open');
                 door.innerHTML = day; // Restore the day number
-                messageElement.textContent = `Das Türchen ${day} wurde geschlossen.`;
+                messageElement.textContent = ``;
             } else {
                 // If the door is closed -> open it
                 door.classList.add('open');
                 door.innerHTML = `<span class="door-day-number">${day}</span><br>${hints[day]}`;
-                messageElement.textContent = `Tipp für Tag ${day}: ${hints[day]}`;
+                messageElement.textContent = `${hints[day]}`;
             }
 
         } else {
