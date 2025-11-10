@@ -8,12 +8,18 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  position: relative;
   min-height: 100vh;
 }
-
+.countdown-section {
+    /* Добавляем отступы, чтобы контент отсчета и календарь не перекрывали картинку, 
+       если картинка больше, чем в вашем примере (668px) */
+    padding-bottom: 680px; /* Должно быть немного больше высоты картинки */
+}
 h1 {
   margin-bottom: 30px;
   color: #2f4f30;
+  margin-bottom: 0px;
 }
 
 .calendar {
@@ -75,7 +81,20 @@ h1 {
 
 .message {
   margin-top: 25px;
+  margin-bottom: 15px;
   font-size: 1.2em;
   color: #2f4f30;
   min-height: 30px;
 }
+
+#michi{
+    width: 100%;
+    height: 708px;
+    position: absolute; 
+    bottom: 0; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    display: block;
+    margin: 0; 
+}
+ 
