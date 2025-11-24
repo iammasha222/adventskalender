@@ -17,7 +17,7 @@ const hints = {
     15: "Hinter deinem PC", // Reeces
     16: "Garderobenpaneel, oben", // Джерки или салями
     17: "Unter dem Bett", // Green Stuff для 40K
-    10: "Schau dir den Esstisch genauer an", // Kinder Hippo (2 шт.)
+    18: "Schau dir den Esstisch genauer an", // Kinder Hippo (2 шт.)
     19: "Bei dem Staubsauger", // Вафли Manner
     20: "Da, wo die Medikamente liegen", // Протеиновый батончик
     21: "Eingangstür", // // Knoppers (3)
@@ -141,3 +141,4 @@ doors.forEach(door => {
         }
     });
 });
+
