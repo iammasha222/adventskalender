@@ -9,7 +9,7 @@ const hints = {
     7: "Schwarze Wandregale", // Monster энергетик
     8: "In deinem Mal-Tisch", // Вафли Manner
     9: "Frag mal die Monstera, sie weißt es sicher", // Руины для 40K
-    10: "Mein Nachttisch, 2 Schublade", // Knoppers (3)
+    10: "Masha's Nachttisch, 2 Schublade", // Knoppers (3)
     11: "Bei deinen Unfug-Klamotten", // Подставка для покраски 
     12: "Bei dem Airfryer", // Kinder Hippo (2 шт.)
     13: "Haben wir genug Nudeln?", // Марципан
@@ -141,4 +141,5 @@ doors.forEach(door => {
         }
     });
 });
+
 
